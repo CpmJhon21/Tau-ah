@@ -1,0 +1,331 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Back To Basic
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Splash Screen -->
+  <div class="fixed inset-0 bg-blue-600 flex items-center justify-center z-50" id="splashScreen">
+   <div class="text-center">
+    <img alt="Windows logo" class="w-24 h-24 mx-auto" height="96" src="https://storage.googleapis.com/a1aa/image/dNV4qcBm5o97-fT0KjQiJ1SCji3e5szn1636cBtnUEM.jpg" width="96"/>
+    <p class="text-white text-lg mt-4">
+     Loading Windows...
+    </p>
+    <div class="mt-4">
+     <div class="w-16 h-16 border-4 border-t-4 border-white border-opacity-50 rounded-full animate-spin mx-auto">
+     </div>
+    </div>
+   </div>
+  </div>
+  <div class="container mx-auto p-4 hidden" id="mainContent">
+   <!-- Windows Open -->
+   <div class="hidden" id="myComputerContainer">
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+     <div class="bg-gray-800 text-white p-2 flex justify-between items-center">
+      <span>
+       My Computer
+      </span>
+      <button class="text-red-500" id="myComputerClose">
+       ✖
+      </button>
+     </div>
+     <div class="p-4">
+      <div class="space-y-4">
+       <div class="flex items-center space-x-4">
+        <img alt="Icon of a computer" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/rkWvQI2jt5PkXPdVYcQSMUcWnUA0rtVZlgMa7mJdxnA.jpg" width="64"/>
+        <h3 class="text-lg font-semibold">
+         This PC
+        </h3>
+       </div>
+       <div class="flex items-center space-x-4">
+        <img alt="Icon of a hard drive" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/XtBbxvE2mOWRhMXmP0-3vknocB2f7eRdcA7EWoRYJqY.jpg" width="64"/>
+        <p>
+         30Gb of 300Gb
+        </p>
+       </div>
+       <div class="flex items-center space-x-4">
+        <img alt="Icon of a folder" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/llUUp3eY92f_3-A1D5aqX0RkidXuRR7O7qn4n5xEsm8.jpg" width="64"/>
+        <h3 class="text-lg font-semibold">
+         Documents
+        </h3>
+       </div>
+       <div class="flex items-center space-x-4">
+        <img alt="Icon of a folder" class="w-16 h-16" height="64" src="https://storage.googleapis.com/a1aa/image/llUUp3eY92f_3-A1D5aqX0RkidXuRR7O7qn4n5xEsm8.jpg" width="64"/>
+        <h3 class="text-lg font-semibold">
+         Downloads
+        </h3>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="hidden" id="peripheralContainer">
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+     <div class="bg-gray-800 text-white p-2 flex justify-between items-center">
+      <span>
+       Peripheral
+      </span>
+      <button class="text-red-500" id="peripheralClose">
+       ✖
+      </button>
+     </div>
+     <div class="p-4 overflow-x-auto">
+      <table class="min-w-full bg-white">
+       <thead>
+        <tr>
+         <th class="py-2 px-4 border-b">
+          Mouse
+         </th>
+         <th class="py-2 px-4 border-b">
+          Keyboard
+         </th>
+         <th class="py-2 px-4 border-b">
+          Microphone
+         </th>
+         <th class="py-2 px-4 border-b">
+          Headphone
+         </th>
+         <th class="py-2 px-4 border-b">
+          Audio Interface
+         </th>
+         <th class="py-2 px-4 border-b">
+          Monitor
+         </th>
+         <th class="py-2 px-4 border-b">
+          Power Option
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td class="py-2 px-4 border-b">
+          Logitech MX Master 3
+         </td>
+         <td class="py-2 px-4 border-b">
+          Fizz 60% RGB
+         </td>
+         <td class="py-2 px-4 border-b">
+          Shure MV7
+         </td>
+         <td class="py-2 px-4 border-b">
+          Takstar HD2000
+         </td>
+         <td class="py-2 px-4 border-b">
+          XOX BP3
+         </td>
+         <td class="py-2 px-4 border-b">
+          Asus TUF Gaming 144Hz 24inch
+         </td>
+         <td class="py-2 px-4 border-b">
+          ICA 1400
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2 px-4 border-b">
+          Logitech K400+
+         </td>
+         <td class="py-2 px-4 border-b">
+          Logitech K400+
+         </td>
+         <td class="py-2 px-4 border-b">
+          Ckmova LCM6 Lav
+         </td>
+         <td class="py-2 px-4 border-b">
+          Sennheiser HD202
+         </td>
+         <td class="py-2 px-4 border-b">
+          -
+         </td>
+         <td class="py-2 px-4 border-b">
+          BenQ GW2785TC 75Hz 27inch
+         </td>
+         <td class="py-2 px-4 border-b">
+          APC Stabilizer 700W
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2 px-4 border-b">
+          -
+         </td>
+         <td class="py-2 px-4 border-b">
+          -
+         </td>
+         <td class="py-2 px-4 border-b">
+          Maono PM36TR
+         </td>
+         <td class="py-2 px-4 border-b">
+          -
+         </td>
+         <td class="py-2 px-4 border-b">
+          -
+         </td>
+         <td class="py-2 px-4 border-b">
+          Xiaomi 24inch
+         </td>
+         <td class="py-2 px-4 border-b">
+          -
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="hidden" id="hwContainer">
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+     <div class="bg-gray-800 text-white p-2 flex justify-between items-center">
+      <span>
+       HW Monitor
+      </span>
+      <button class="text-red-500" id="hwClose">
+       ✖
+      </button>
+     </div>
+     <div class="p-4 overflow-x-auto">
+      <table class="min-w-full bg-white">
+       <thead>
+        <tr>
+         <th class="py-2 px-4 border-b">
+          Power Option
+         </th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr>
+         <td class="py-2 px-4 border-b">
+          ICA 1400
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2 px-4 border-b">
+          APC Stabilizer 700W
+         </td>
+        </tr>
+        <tr>
+         <td class="py-2 px-4 border-b">
+          Xiaomi 24inch
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <!-- End of Windows Open -->
+   <!-- Taskbar Menu -->
+   <div class="fixed bottom-0 left-0 right-0 bg-gray-800 text-white flex justify-between items-center p-2">
+    <div class="relative">
+     <button class="bg-gray-700 px-4 py-2 rounded" id="menuButton">
+      MENU
+     </button>
+     <div class="absolute bottom-12 left-0 bg-gray-700 p-4 rounded shadow-lg hidden w-48 ml-1" id="menu">
+      <a class="flex items-center space-x-2 p-2 hover:bg-gray-600 rounded" href="#" id="myComputerButton">
+       <img alt="Icon of a computer" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/rkWvQI2jt5PkXPdVYcQSMUcWnUA0rtVZlgMa7mJdxnA.jpg" width="24"/>
+       <span>
+        My Computer
+       </span>
+      </a>
+      <a class="flex items-center space-x-2 p-2 hover:bg-gray-600 rounded" href="#" id="hwButton">
+       <img alt="Icon of a motherboard" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/xMO3PQOh189dVKK5pAjq_BMR9X4EC_ccIe6uB1tJYRU.jpg" width="24"/>
+       <span>
+        HW Monitor
+       </span>
+      </a>
+      <a class="flex items-center space-x-2 p-2 hover:bg-gray-600 rounded" href="#" id="peripheralButton">
+       <img alt="Icon of a keyboard" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/M6epHA2tGDRMLGmhA6ntxLIZqWY5W3GxaqbDUFbzYTo.jpg" width="24"/>
+       <span>
+        Peripheral
+       </span>
+      </a>
+      <div class="border-t border-gray-600 my-2">
+      </div>
+      <a class="flex items-center space-x-2 p-2 hover:bg-gray-600 rounded" href="#" id="shutdown">
+       <img alt="Icon of a power button" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/BMjsjoMZ5RPQL-jbMEGoVzHfFkh3XBLnV2PZi7laZxo.jpg" width="24"/>
+       <span>
+        Shutdown
+       </span>
+      </a>
+     </div>
+    </div>
+    <div class="flex-1 text-center">
+     <p class="marquee">
+      **** marquee ****
+     </p>
+    </div>
+    <div class="text-right">
+     <p id="clock">
+     </p>
+    </div>
+   </div>
+   <!-- End of Taskbar Menu -->
+  </div>
+  <audio id="backgroundMusic" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" autoplay loop></audio>
+  <script src="classes/Computer/Main.js" type="module">
+  </script>
+  <script src="classes/Computer/Time.js" type="module">
+  </script>
+  <script src="os.js" type="module">
+  </script>
+  <script>
+   document.getElementById('menuButton').addEventListener('click', () => {
+        document.getElementById('menu').classList.toggle('hidden');
+      });
+
+      document.getElementById('myComputerButton').addEventListener('click', () => {
+        document.getElementById('myComputerContainer').classList.toggle('hidden');
+        document.getElementById('menu').classList.add('hidden');
+      });
+
+      document.getElementById('hwButton').addEventListener('click', () => {
+        document.getElementById('hwContainer').classList.toggle('hidden');
+        document.getElementById('menu').classList.add('hidden');
+      });
+
+      document.getElementById('peripheralButton').addEventListener('click', () => {
+        document.getElementById('peripheralContainer').classList.toggle('hidden');
+        document.getElementById('menu').classList.add('hidden');
+      });
+
+      document.getElementById('myComputerClose').addEventListener('click', () => {
+        document.getElementById('myComputerContainer').classList.add('hidden');
+      });
+
+      document.getElementById('hwClose').addEventListener('click', () => {
+        document.getElementById('hwContainer').classList.add('hidden');
+      });
+
+      document.getElementById('peripheralClose').addEventListener('click', () => {
+        document.getElementById('peripheralContainer').classList.add('hidden');
+      });
+
+      function updateClock() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        document.getElementById('clock').textContent = `${hours}:${minutes}`;
+      }
+
+      setInterval(updateClock, 1000);
+      updateClock();
+
+      // Splash screen logic
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          document.getElementById('splashScreen').classList.add('hidden');
+          document.getElementById('mainContent').classList.remove('hidden');
+        }, 3000); // Adjust the timeout as needed
+      });
+
+      // Play background music
+      const backgroundMusic = document.getElementById('backgroundMusic');
+      backgroundMusic.play();
+  </script>
+ </body>
+</html>
