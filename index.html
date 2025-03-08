@@ -267,65 +267,9 @@
    <!-- End of Taskbar Menu -->
   </div>
   <audio id="backgroundMusic" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" autoplay loop></audio>
-  <script src="classes/Computer/Main.js" type="module">
-  </script>
-  <script src="classes/Computer/Time.js" type="module">
-  </script>
-  <script src="os.js" type="module">
-  </script>
-  <script>
-   document.getElementById('menuButton').addEventListener('click', () => {
-        document.getElementById('menu').classList.toggle('hidden');
-      });
-
-      document.getElementById('myComputerButton').addEventListener('click', () => {
-        document.getElementById('myComputerContainer').classList.toggle('hidden');
-        document.getElementById('menu').classList.add('hidden');
-      });
-
-      document.getElementById('hwButton').addEventListener('click', () => {
-        document.getElementById('hwContainer').classList.toggle('hidden');
-        document.getElementById('menu').classList.add('hidden');
-      });
-
-      document.getElementById('peripheralButton').addEventListener('click', () => {
-        document.getElementById('peripheralContainer').classList.toggle('hidden');
-        document.getElementById('menu').classList.add('hidden');
-      });
-
-      document.getElementById('myComputerClose').addEventListener('click', () => {
-        document.getElementById('myComputerContainer').classList.add('hidden');
-      });
-
-      document.getElementById('hwClose').addEventListener('click', () => {
-        document.getElementById('hwContainer').classList.add('hidden');
-      });
-
-      document.getElementById('peripheralClose').addEventListener('click', () => {
-        document.getElementById('peripheralContainer').classList.add('hidden');
-      });
-
-      function updateClock() {
-        const now = new Date();
-        const hours = now.getHours().toString().padStart(2, '0');
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        document.getElementById('clock').textContent = `${hours}:${minutes}`;
-      }
-
-      setInterval(updateClock, 1000);
-      updateClock();
-
-      // Splash screen logic
-      window.addEventListener('load', () => {
-        setTimeout(() => {
-          document.getElementById('splashScreen').classList.add('hidden');
-          document.getElementById('mainContent').classList.remove('hidden');
-        }, 3000); // Adjust the timeout as needed
-      });
-
-      // Play background music
-      const backgroundMusic = document.getElementById('backgroundMusic');
-      backgroundMusic.play();
-  </script>
+ <script src="js/script.js"></script>
+    <script src="classes/Computer/Main.js" type="module"></script>
+    <script src="classes/Computer/Time.js" type="module"></script>
+    <script src="os.js" type="module"></script>
  </body>
 </html>
